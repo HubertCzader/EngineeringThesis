@@ -14,7 +14,7 @@
     {% for key in all_keys %}
     <tr>
 		<td><b>{{key.id}}</b> </td>
-        <td><a class="btn btn-sm btn-info" href="{% url 'keys:active_keys' key.id%}">Check if active</a> </td>
+        <td><a class="btn btn-sm btn-info" href="{% url 'keys:check_keys' key.id%}">Check if active</a> </td>
 	</tr>
 	{% endfor %}
     </table>

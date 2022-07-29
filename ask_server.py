@@ -2,7 +2,7 @@ import requests
 import os
 
 os.environ['NO_PROXY'] = '127.0.0.1'
-url = 'http://127.0.0.1:8000/'
+url = 'http://127.0.0.1:8000/keys/check/'
 ID = 'e2055800-058b-42c7-b854-beef168e7ccd'
 
 

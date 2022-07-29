@@ -10,9 +10,9 @@ class KeysView(generic.ListView):
     context_object_name = 'door_keys'
 
     def get_queryset(self):
-        Key.objects.all()
+        return Key.objects.all()
 
 
-def active_key(request, key_id):
-    is_active = Key.objects.get(id=key_id).active
+def check_key(request, key_id):
+    is_active = Key.objects.get_or_404(id=key_id).active
     return HttpResponse(f'{is_active}')
