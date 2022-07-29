@@ -6,7 +6,7 @@
 </head>
 <body>
 <h3>KEYS:</h3>
-	<table class="table table-sm">
+	<table>
 	<tr>
 		<th>ID</th>
         <th></th>
@@ -14,7 +14,7 @@
     {% for key in all_keys %}
     <tr>
 		<td><b>{{key.id}}</b> </td>
-        <td><a class="btn btn-sm btn-info" href="{% url 'keys:check_keys' key.id%}">Check if active</a> </td>
+        <td><a href= "check/{{ key.id }}/"> Check if active</a></td>
 	</tr>
 	{% endfor %}
     </table>
