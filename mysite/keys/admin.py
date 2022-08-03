@@ -3,7 +3,7 @@ from .models import Key
 
 
 class KeyAdmin(admin.ModelAdmin):
-    list_display = ('id', 'active')
+    list_display = ('card_id', 'active')
 
 
 # Register your models here.
